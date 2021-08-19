@@ -1,0 +1,73 @@
+.container {
+  display: grid;
+  padding: 32px;
+  grid-gap: 32px;
+}
+
+.header {
+  display: flex;
+  padding: 16px;
+  gap: 32px;
+  background-color: whitesmoke;
+}
+
+.block {
+  display: flex;
+  gap: 32px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.empty {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.toast {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  margin: 16px;
+  padding: 4px 16px;
+  border: 2px black;
+  color: green;
+  filter: drop-shadow(0 0 0.75rem rgb(224, 221, 222));
+}
+
+.loaderbar {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

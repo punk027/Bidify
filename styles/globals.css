@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Barlow;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Barlow;
+}
+
+button {
+  background-color: whitesmoke;
+  border: none;
+  padding: 8px 32px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+  color: whitesmoke;
+}
+
+button:active {
+  background-color: rgb(218, 209, 209);
+  color: whitesmoke;
+}
+
+select {
+  background-color: rgb(196, 191, 191);
+  color: white;
+  padding: 4px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+select::after {
+  content: '▼';
+  font-size: 1rem;
+  top: 6px;
+  right: 10px;
+  position: absolute;
+}
